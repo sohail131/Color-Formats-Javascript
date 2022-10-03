@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/cerulean/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Color Formats</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">Color Formats</a>
+        <div>
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a href="hex.html" class="nav-link">Hex</a>
+            </li>
+            <li class="nav-item">
+              <a href="hex-trans.html" class="nav-link">Hex A</a>
+            </li>
+            <li class="nav-item">
+              <a href="rgb.html" class="nav-link active">RGB</a>
+            </li>
+            <li class="nav-item">
+              <a href="rgb-trans.html" class="nav-link">RGBA</a>
+            </li>
+            <li class="nav-item">
+              <a href="hsl.html" class="nav-link">HSL</a>
+            </li>
+            <li class="nav-item">
+              <a href="hsl-trans.html" class="nav-link">HSLA</a>
+            </li>
+            <li class="nav-item">
+              <a href="color-names.html" class="nav-link">Color Names</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="alert alert-dismissible alert-success" id="message">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          onclick="hideAlertMessage()"
+        ></button>
+        <strong>Code copied successfully!</strong>
+      </div>
+
+      <div class="container" id="color-div">
+        <span id="circle"></span>
+        <h3 id="main-text">Background Color : <span id="text"></span></h3>
+        <div id="fields">
+          <input type="number" id="red" min="0" max="255" maxlength="3" />
+          <input type="number" id="green" min="0" max="255" maxlength="3" />
+          <input type="number" id="blue" min="0" max="255" maxlength="3" />
+        </div>
+      </div>
+    </main>
+
+    <script src="rgb.js"></script>
+  </body>
+</html>
